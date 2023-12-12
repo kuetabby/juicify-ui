@@ -1,0 +1,60 @@
+.navbar-container {
+  @apply !px-0 w-full !h-[4.5em] sm:!h-20 !bg-transparent z-50 relative;
+  /* @apply absolute top-0 z-50; */
+}
+
+.navbar,
+.navbar-scroll {
+  @apply max-w-screen-xl w-full m-auto;
+  @apply flex flex-nowrap justify-between md:justify-start items-center;
+  @apply px-2 sm:px-4;
+
+  z-index: 1000;
+  /* background-color: var(--gray-footer); */
+  transition: linear;
+  transition-delay: 0.15s;
+  transition-duration: 0.15s;
+  transition-delay: 0.15s;
+}
+
+.navbar {
+  @apply h-full;
+}
+
+.navbar-scroll {
+  @apply fixed py-2  bg-dark-main opacity-95 border-b border-b-white;
+  @apply top-0 left-[50%];
+  transform: translate(-50%, 0%);
+  /* background: linear-gradient(
+    180deg,
+    rgba(60, 60, 60, 1) 0%,
+    rgba(56, 56, 56, 1) 33%,
+    rgba(68, 68, 68, 1) 66%,
+    rgba(36, 36, 36, 1) 100%
+  ); */
+}
+
+.navbar-title {
+  @apply bg-pink-rose;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo-container {
+  @apply flex items-center cursor-pointer w-full sm:w-auto;
+}
+
+.logo-text {
+  @apply ml-3 text-2xl font-extrabold;
+  @apply bg-pink-rose;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: theme("screens.2xl")) {
+  .logo-container {
+    margin-right: 1.25rem;
+  }
+}
