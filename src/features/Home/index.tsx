@@ -43,13 +43,6 @@ const Home: React.FC<Props> = () => {
 
   return (
     <div className="homepage-container">
-      <div
-        // src={AppBackground}
-        // alt="app-bg"
-        //   className="w-full h-[50vw] absolute top-0 left-0 bg-cover bg-center lg:bg-top bg-no-repeat brightness-[0.65]"
-        className="app-background bg-app"
-      />
-
       <div id="welcome" className="h-12 md:h-20 relative" />
       <div className="w-full h-full relative">
         <div

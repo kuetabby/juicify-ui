@@ -22,13 +22,6 @@
   @apply text-3xl sm:text-center font-extrabold;
 }
 
-.app-background {
-  @apply w-full h-[100vw] lg:h-screen;
-  /* @apply absolute top-0 left-0 bg-cover bg-center lg:bg-top bg-no-repeat brightness-75; */
-  @apply absolute top-0 left-0 bg-cover brightness-75;
-  /* @apply absolute top-0; */
-}
-
 .juicyfi-tokenomics,
 .app-findus {
   @apply text-3xl sm:text-center font-extrabold text-white;

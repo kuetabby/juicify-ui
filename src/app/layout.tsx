@@ -5,9 +5,10 @@ import BaseLayout from "@/layouts";
 
 import "./globals.css";
 
-const app_title = "JuicyFi";
+const app_title = "JuicyFi - Redefining Security in DeFi";
 const app_name = "JuicyFi";
-const description = "";
+const description =
+  "A DeFi DApp Offering Unmatched Privacy and Security. Explore Juice Crypto, Audit Tools, and Staking for Enhanced Financial Control. Join the Revolution in Decentralized Finance Today!";
 
 export const metadata: Metadata = {
   title: app_title,

@@ -1,0 +1,37 @@
+.stakepage-container {
+  @apply w-full h-full p-2 sm:p-4 m-auto !pb-4;
+  /* @apply w-full h-full m-auto; */
+  max-width: 1440px;
+}
+
+.stake-background {
+  @apply w-full h-full bg-center;
+  @apply absolute top-0 left-0 bg-cover bg-no-repeat;
+}
+
+.stake-title {
+  @apply bg-pink-rose text-xl sm:text-3xl !font-extrabold;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-stake {
+  @apply !w-full sm:!w-[30%] !h-11 !min-w-max !min-h-min mt-1 sm:mt-0;
+}
+
+.btn-unstake,
+.btn-claim {
+  @apply w-full sm:w-[45%] !h-10 !min-w-max !min-h-min;
+}
+
+.btn-claim {
+  @apply mt-2 sm:mt-0;
+}
+
+.btn-stake,
+.btn-unstake,
+.btn-claim {
+  @apply text-white font-semibold;
+  @apply bg-pink-rose hover:bg-pink-light active:bg-pink-light focus:bg-pink-light;
+}

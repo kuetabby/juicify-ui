@@ -1,0 +1,17 @@
+.scannerpage-container {
+  @apply w-full h-full p-2 sm:p-4 m-auto !pb-4;
+  /* @apply w-full h-full m-auto; */
+  max-width: 1440px;
+}
+
+.scanner-background {
+  @apply w-full h-full bg-center;
+  @apply absolute top-0 left-0 bg-cover bg-no-repeat;
+}
+
+.scanner-title {
+  @apply bg-pink-rose text-xl sm:text-3xl !font-extrabold;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
