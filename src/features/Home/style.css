@@ -1,5 +1,5 @@
 .homepage-container {
-  @apply w-full h-full px-2 sm:px-4 m-auto;
+  @apply w-full h-full px-2 sm:px-4 m-auto pb-4;
   /* @apply w-full h-full m-auto relative; */
   @apply max-w-screen-xl;
 }
@@ -20,6 +20,13 @@
 
 .app-features {
   @apply text-3xl sm:text-center font-extrabold;
+}
+
+.app-background {
+  @apply w-full h-[100vw] lg:h-screen;
+  /* @apply absolute top-0 left-0 bg-cover bg-center lg:bg-top bg-no-repeat brightness-75; */
+  @apply absolute top-0 left-0 bg-cover brightness-75;
+  /* @apply absolute top-0; */
 }
 
 .juicyfi-tokenomics,

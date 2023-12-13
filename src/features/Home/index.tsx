@@ -1,6 +1,7 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@chakra-ui/react";
 import { SwapRightOutlined } from "@ant-design/icons";
 
@@ -11,6 +12,8 @@ import { AppFindUs } from "./FindUs";
 import Loader from "@/components/Loader";
 
 import { useIsMounted } from "@/hooks/useIsMounted";
+
+import AppBackground from "@/assets/bg-app.png";
 
 import "./style.css";
 
@@ -40,6 +43,13 @@ const Home: React.FC<Props> = () => {
 
   return (
     <div className="homepage-container">
+      <div
+        // src={AppBackground}
+        // alt="app-bg"
+        //   className="w-full h-[50vw] absolute top-0 left-0 bg-cover bg-center lg:bg-top bg-no-repeat brightness-[0.65]"
+        className="app-background bg-app"
+      />
+
       <div id="welcome" className="h-12 md:h-20 relative" />
       <div className="w-full h-full relative">
         <div
@@ -58,10 +68,19 @@ const Home: React.FC<Props> = () => {
           JuicyFi. Explore a new era of financial possibilities today */}
           Your gateway to a secure and private financial ecosystem.
         </div>
-        <div className="mt-4 text-sm sm:text-base">{"-"}</div>
+        <div className="my-4 text-sm sm:text-base">{"-"}</div>
         <Link href="/" target="_blank" rel="noopener noreferrer">
           <Button
-            className="w-32 bg-pink-light hover:bg-pink-rose active:bg-pink-rose focus:bg-pink-rose text-white mt-4 shadow-sunny ml-2 sm:ml-0"
+            className="w-32 bg-pink-light hover:bg-pink-rose active:bg-pink-rose focus:bg-pink-rose text-white shadow-sunny hover:shadow-rose ml-2 sm:ml-0"
+            rightIcon={<SwapRightOutlined style={{ fontSize: "1.5em" }} />}
+          >
+            Whitepaper
+          </Button>
+        </Link>
+
+        <Link href="/" target="_blank" rel="noopener noreferrer">
+          <Button
+            className="w-32 bg-pink-light hover:bg-pink-rose active:bg-pink-rose focus:bg-pink-rose text-white shadow-sunny hover:shadow-rose ml-6"
             rightIcon={<SwapRightOutlined style={{ fontSize: "1.5em" }} />}
           >
             Buy Now

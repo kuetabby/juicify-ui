@@ -70,7 +70,7 @@ export const AppFeature: React.FC<Props> = () => {
               <Link href="/" target="_blank" rel="noopener noreferrer">
                 <Button
                   rightIcon={<ArrowRightOutlined />}
-                  className="bg-pink-light hover:bg-pink-rose active:bg-pink-rose focus:bg-pink-rose text-white mt-4 shadow-sunny"
+                  className="bg-pink-light hover:bg-pink-rose active:bg-pink-rose focus:bg-pink-rose text-white mt-4 shadow-sunny hover:shadow-rose"
                 >
                   Juice Now
                 </Button>
@@ -101,7 +101,7 @@ export const AppFeature: React.FC<Props> = () => {
               <Link href="/" target="_blank" rel="noopener noreferrer">
                 <Button
                   rightIcon={<ArrowRightOutlined />}
-                  className="bg-pink-light hover:bg-pink-rose active:bg-pink-rose focus:bg-pink-rose text-white mt-4 shadow-sunny"
+                  className="bg-pink-light hover:bg-pink-rose active:bg-pink-rose focus:bg-pink-rose text-white mt-4 shadow-sunny hover:shadow-rose"
                 >
                   Audit Now
                 </Button>
@@ -130,7 +130,7 @@ export const AppFeature: React.FC<Props> = () => {
               <Link href="/" target="_blank" rel="noopener noreferrer">
                 <Button
                   rightIcon={<ArrowRightOutlined />}
-                  className="bg-pink-light hover:bg-pink-rose active:bg-pink-rose focus:bg-pink-rose text-white mt-4 shadow-sunny"
+                  className="bg-pink-light hover:bg-pink-rose active:bg-pink-rose focus:bg-pink-rose text-white mt-4 shadow-sunny hover:shadow-rose"
                 >
                   Stake Now
                 </Button>

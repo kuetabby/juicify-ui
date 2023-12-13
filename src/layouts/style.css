@@ -28,10 +28,3 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-.app-background {
-  @apply w-full h-full;
-  /* @apply absolute top-0 left-0 bg-cover bg-center lg:bg-top bg-no-repeat brightness-75; */
-  @apply absolute top-0 left-0 bg-cover brightness-75;
-  /* @apply absolute top-0; */
-}

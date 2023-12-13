@@ -4,16 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button, useDisclosure, useMediaQuery } from "@chakra-ui/react";
 import clsx from "clsx";
-import {
-  DollarOutlined,
-  LineChartOutlined,
-  MenuOutlined,
-} from "@ant-design/icons";
+import { MenuOutlined } from "@ant-design/icons";
 
 import PageTabs from "../PageTabs";
 import { NavbarDrawer } from "./Drawer";
 
-// import { grotesk } from "@/utils/font";
+import { pacifico } from "@/utils/font";
 
 import AppLogo from "@/assets/logo-app.png";
 
@@ -58,12 +54,7 @@ const Navbar: React.FC<Props> = () => {
   };
 
   return (
-    <div
-      className={clsx(
-        "navbar-container"
-        // grotesk.className
-      )}
-    >
+    <div className={clsx("navbar-container", pacifico.className)}>
       {/* <div className={clsx(isScroll ? "navbar-scroll" : "navbar")}> */}
       <div className="navbar">
         <div className="w-1/4 sm:w-1/2 flex items-center justify-between">
@@ -76,7 +67,7 @@ const Navbar: React.FC<Props> = () => {
             <div className="logo-text">JuicyFi</div>
           </Link>
         </div>
-        <div className="w-2/3 md:w-1/2 hidden sm:flex justify-end">
+        <div className="w-full md:w-2/3 hidden sm:flex justify-end">
           <PageTabs containterClass="flex ml-2" />
         </div>
         {/* <div

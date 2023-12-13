@@ -13,6 +13,8 @@ import TelegramLogo from "@/assets/logo-telegram.png";
 import MediumLogo from "@/assets/logo-medium.png";
 import GitbookLogo from "@/assets/logo-gitbook.png";
 
+import { pacifico } from "@/utils/font";
+
 import "./style.css";
 
 interface Props {}
@@ -23,7 +25,7 @@ const AppFooter: React.FC<Props> = () => {
   }
 
   return (
-    <footer className={clsx("app-footer bg-dark-fade")}>
+    <footer className={clsx("app-footer bg-dark-fade", pacifico.className)}>
       <div className="app-footer-wrapper">
         <div className="w-full flex flex-wrap items-center mb-2">
           <div className="app-footer-title">

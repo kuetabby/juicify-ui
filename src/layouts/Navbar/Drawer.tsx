@@ -19,6 +19,8 @@ import { useIsMounted } from "@/hooks/useIsMounted";
 import { getHash } from "@/utils/hash";
 import useHash from "@/hooks/useHashname";
 
+import { pacifico } from "@/utils/font";
+
 import "../style.css";
 import "./style.css";
 
@@ -75,7 +77,7 @@ export const NavbarDrawer: React.FC<Props> = ({ isOpen, onClose }) => {
       finalFocusRef={btnRef}
     >
       <DrawerOverlay />
-      <DrawerContent>
+      <DrawerContent className={pacifico.className}>
         <DrawerCloseButton
           className="mt-2 font-extrabold text-red-500"
           style={{ fontSize: 20 }}

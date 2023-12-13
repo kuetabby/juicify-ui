@@ -26,7 +26,7 @@ export const AppTokenomics: React.FC<Props> = () => {
   return (
     <>
       <div id="tokenomics" className="h-20 md:h-24 relative" />
-      <div className="w-full h-full relative px-2 mx-auto mb-4 text-center">
+      <div className="w-full h-full relative px-2 mx-auto text-center">
         <h1
           ref={featuresRef}
           className={`app-features ${

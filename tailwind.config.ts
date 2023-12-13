@@ -25,11 +25,13 @@ module.exports = {
         pink: "#FF00FF",
         secondary: "#BF00FF",
 
-        "dark-main": "#0A0C11",
+        "dark-main": "#000",
         "dark-secondary": "rgb(19, 24, 35)",
         "dark-tertiary": "#205d7d",
       },
       backgroundImage: () => ({
+        app: "linear-gradient(180deg,#0000,#000),url(/bg-app.png)",
+
         "pink-light": "linear-gradient(to right, #FFC0CB, #FF69B4)",
         "pink-pale": "linear-gradient(to right, #FFD1DC, #FF00FF)",
         "pink-vibrant": "linear-gradient(to right, #FFB6C1, #FF1493)",
