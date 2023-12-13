@@ -1,5 +1,6 @@
-import Staking from "@/features/Stake";
+// import Staking from "@/features/Stake";
 
 export default function StakingPage() {
-  return <Staking />;
+  // return <Staking />;
+  return null;
 }

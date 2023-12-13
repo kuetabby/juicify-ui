@@ -1,5 +1,6 @@
-import Audit from "@/features/Audit";
+// import Audit from "@/features/Audit";
 
 export default function AuditPage() {
-  return <Audit />;
+  // return <Audit />;
+  return "-";
 }
