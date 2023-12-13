@@ -7,7 +7,7 @@ import Footer from "./Footer";
 
 import Provider from "@/library/Provider";
 
-import { swash } from "@/utils/font";
+// import { swash } from "@/utils/font";
 
 import "./style.css";
 
@@ -23,7 +23,12 @@ const BaseLayout: React.FC<Props> = ({ children }) => {
         //   className="w-full h-[50vw] absolute top-0 left-0 bg-cover bg-center lg:bg-top bg-no-repeat brightness-[0.65]"
         className="app-background bg-app"
       />
-      <main className={clsx("base-main-container", swash.className)}>
+      <main
+        className={clsx(
+          "base-main-container"
+          // swash.className
+        )}
+      >
         {children}
       </main>
       <Footer />
