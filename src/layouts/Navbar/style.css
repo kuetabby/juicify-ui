@@ -1,5 +1,5 @@
 .navbar-container {
-  @apply !px-0 w-full !h-[4.5em] sm:!h-20 !bg-transparent z-50 relative;
+  @apply !px-0 w-full !h-[4.5em] sm:!h-20 z-50 relative;
   /* @apply absolute top-0 z-50; */
 }
 

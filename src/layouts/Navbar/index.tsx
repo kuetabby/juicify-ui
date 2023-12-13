@@ -29,7 +29,6 @@ const Navbar: React.FC<Props> = () => {
     onClose: onCloseDrawer,
   } = useDisclosure();
 
-  // const router = useRouter()
   const [isEqual640] = useMediaQuery("(min-width: 640px)");
 
   useEffect(() => {
@@ -54,7 +53,13 @@ const Navbar: React.FC<Props> = () => {
   };
 
   return (
-    <div className={clsx("navbar-container", pacifico.className)}>
+    <div
+      className={clsx(
+        "navbar-container bg-transparent",
+        // pathname === "/" ? "bg-transparent" : "bg-black",
+        pacifico.className
+      )}
+    >
       {/* <div className={clsx(isScroll ? "navbar-scroll" : "navbar")}> */}
       <div className="navbar">
         <div className="w-1/4 sm:w-1/2 flex items-center justify-between">

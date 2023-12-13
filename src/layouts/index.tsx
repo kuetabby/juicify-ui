@@ -17,6 +17,12 @@ const BaseLayout: React.FC<Props> = ({ children }) => {
   return (
     <Provider>
       <Navbar />
+      <div
+        // src={AppBackground}
+        // alt="app-bg"
+        //   className="w-full h-[50vw] absolute top-0 left-0 bg-cover bg-center lg:bg-top bg-no-repeat brightness-[0.65]"
+        className="app-background bg-app"
+      />
       <main className={clsx("base-main-container", swash.className)}>
         {children}
       </main>
