@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
+/* @font-face {
   font-family: "Yellow Style";
   src: url("/fonts/YellowStyle.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-}
+} */
 
 html,
 body {
@@ -17,7 +17,7 @@ body {
 
 body {
   color: white;
-  font-family: "Yellow Style", sans-serif;
+  /* font-family: "Yellow Style", sans-serif; */
 }
 
 * {

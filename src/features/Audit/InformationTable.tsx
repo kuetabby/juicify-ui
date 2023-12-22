@@ -51,7 +51,7 @@ export const InformationTable: React.FC<Props> = ({
 
   return (
     <Card
-      className={`w-full h-full bg-dark-secondary shadow-sunny rounded-lg text-white mt-6 ${extraClass}`}
+      className={`w-full h-full bg-dark-secondary rounded-lg text-white mt-4 ${extraClass}`}
     >
       <CardHeader className="pb-0 text-slate-400">Top 10 Holders</CardHeader>
       <CardBody className="pt-2">

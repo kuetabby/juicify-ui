@@ -56,6 +56,74 @@ export interface LockedDetail {
   opt_time: string;
 }
 
+export interface Supply {
+  circulatingSupply: number;
+  totalSupply: number;
+  mcap: number;
+  fdv: number;
+  holders: number;
+  transactions: number;
+}
+
+export interface Info {
+  name: string;
+  symbol: string;
+  creationTime: string;
+  creationBlock: number;
+  decimals: number;
+  socialInfo: SocialInfo;
+}
+
+export interface SocialInfo {
+  bitbucket: string;
+  discord: string;
+  facebook: string;
+  github: string;
+  instagram: string;
+  linkedin: string;
+  medium: string;
+  reddit: string;
+  telegram: string;
+  tiktok: string;
+  twitter: string;
+  website: string;
+  youtube: string;
+}
+
+export interface Price {
+  price: number;
+  priceChain: number;
+  variation5m: any;
+  variationChain5m: any;
+  price1h: number;
+  priceChain1h: number;
+  volume1h: number;
+  buys1h: number;
+  sells1h: number;
+  sellVolume1h: number;
+  buyVolume1h: number;
+  variation1h: number;
+  variationChain1h: number;
+  price6h: number;
+  priceChain6h: number;
+  volume6h: number;
+  buys6h: number;
+  sells6h: number;
+  sellVolume6h: number;
+  buyVolume6h: number;
+  variation6h: number;
+  variationChain6h: number;
+  price24h: number;
+  priceChain24h: number;
+  volume24h: number;
+  buys24h: number;
+  sells24h: number;
+  sellVolume24h: number;
+  buyVolume24h: number;
+  variation24h: number;
+  variationChain24h: number;
+}
+
 export interface GoPlusTokenResponse {
   anti_whale_modifiable: string;
   buy_tax: string;
@@ -95,4 +163,19 @@ export interface GoPlusTokenResponse {
   total_supply: string;
   trading_cooldown: string;
   transfer_pausable: string;
+}
+
+export interface DexToolsTokenResponse {
+  statusCode: number;
+  data: Info;
+}
+
+export interface DexToolsPoolPriceResponse {
+  statusCode: number;
+  data: Price;
+}
+
+export interface DexToolsTokenInfoResponse {
+  statusCode: number;
+  data: Supply;
 }

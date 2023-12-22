@@ -1,0 +1,16 @@
+.juice-container {
+  @apply w-full h-full px-2 sm:px-4 m-auto pb-4;
+  /* @apply w-full h-full m-auto relative; */
+  @apply max-w-screen-xl;
+}
+
+.app-juice-title {
+  @apply bg-pink-light;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.app-juice-title {
+  @apply mx-2 md:mx-0 text-2xl md:text-4xl text-center;
+}

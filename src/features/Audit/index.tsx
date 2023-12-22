@@ -146,7 +146,7 @@ const Scanner: React.FC<Props> = () => {
                 <CardBody className="pb-0">
                   <div className="w-full flex flex-wrap justify-between">
                     <div className="w-full sm:w-1/3 flex flex-col">
-                      <div className="text-lg text-white">Select Network :</div>
+                      <div className="text-lg text-white">Select Network</div>
                       <Menu>
                         <MenuButton
                           as={Button}
@@ -197,7 +197,7 @@ const Scanner: React.FC<Props> = () => {
                     </div>
                     <div className="w-full sm:w-3/5 flex flex-col mt-3 sm:mt-0">
                       <div className="text-lg text-white">
-                        Enter the Contract Address :
+                        Enter the Contract Address
                       </div>
                       <Input
                         value={contractAddress}

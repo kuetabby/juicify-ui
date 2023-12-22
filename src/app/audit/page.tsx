@@ -2,5 +2,5 @@
 
 export default function AuditPage() {
   // return <Audit />;
-  return "-";
+  return <div />;
 }

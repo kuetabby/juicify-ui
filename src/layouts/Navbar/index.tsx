@@ -9,7 +9,7 @@ import { MenuOutlined } from "@ant-design/icons";
 import PageTabs from "../PageTabs";
 import { NavbarDrawer } from "./Drawer";
 
-// import { pacifico } from "@/utils/font";
+import { montserrat } from "@/utils/font";
 
 import AppLogo from "@/assets/logo-app.png";
 
@@ -55,9 +55,9 @@ const Navbar: React.FC<Props> = () => {
   return (
     <div
       className={clsx(
-        "navbar-container bg-transparent"
+        "navbar-container bg-transparent",
         // pathname === "/" ? "bg-transparent" : "bg-black",
-        // pacifico.className
+        montserrat.className
       )}
     >
       {/* <div className={clsx(isScroll ? "navbar-scroll" : "navbar")}> */}
