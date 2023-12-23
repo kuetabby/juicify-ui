@@ -136,10 +136,10 @@ const Scanner: React.FC<Props> = () => {
               <span className="scanner-title mr-1">JuicyFi</span> Auditor
             </div>
             <div className="text-lg sm:text-xl text-white mt-4 mb-1">
-              You're one step closer to a safer portfolio.
+              Perform In-depth Smart Contract Analyses and Audits
             </div>
             <div className="text-lg sm:text-xl text-white">
-              Let's get started!
+              Paste The Smart Contract for Examination!
             </div>
             <div className="w-full h-full flex flex-wrap justify-between">
               <Card className="w-full h-full md:w-4/5 lg:w-3/5 xl:w-2/5 bg-dark-secondary shadow-sunny rounded-lg mt-4">
