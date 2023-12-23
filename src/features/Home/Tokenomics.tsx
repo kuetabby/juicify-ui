@@ -76,7 +76,7 @@ export const AppTokenomics: React.FC<Props> = () => {
         </div>
         <List className="text-base lg:text-2xl xl:text-3xl font-semibold xs:px-2 sm:px-0 text-center mb-4">
           <ListItem className="text-lg lg:text-2xl xl:text-3xl font-bold">
-            CA : -{/* 0xaf0E63457b2542B75fcEb6AA066D3DE420A6D88e */}
+            CA : 0xaf0E63457b2542B75fcEb6AA066D3DE420A6D88e
           </ListItem>
         </List>
       </div>

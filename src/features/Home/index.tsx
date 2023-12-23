@@ -62,7 +62,7 @@ const Home: React.FC<Props> = () => {
           Your gateway to a secure and private financial ecosystem.
         </div>
         <div className="mt-4 mb-6 text-sm sm:text-base font-semibold">
-          {/* 0xaf0E63457b2542B75fcEb6AA066D3DE420A6D88e */}-
+          0xaf0E63457b2542B75fcEb6AA066D3DE420A6D88e
         </div>
         <Link
           href="/"
@@ -78,10 +78,9 @@ const Home: React.FC<Props> = () => {
         </Link>
 
         <Link
-          href="/"
-          // href="https://app.uniswap.org/tokens/ethereum/0xaf0E63457b2542B75fcEb6AA066D3DE420A6D88e"
-          // target="_blank"
-          // rel="noopener noreferrer"
+          href="https://app.uniswap.org/tokens/ethereum/0xaf0E63457b2542B75fcEb6AA066D3DE420A6D88e"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <Button
             className="w-[8em] bg-pink-light hover:bg-pink-rose active:bg-pink-rose focus:bg-pink-rose text-white shadow-sunny hover:shadow-rose ml-6"
