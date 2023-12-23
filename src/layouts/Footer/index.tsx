@@ -38,7 +38,7 @@ const AppFooter: React.FC<Props> = () => {
           </div>
           <div className="w-full sm:w-1/2 flex justify-center sm:justify-end">
             <Link
-              href="https://twitter.com/"
+              href="https://twitter.com/JuicyFiNetwork"
               target="_blank"
               rel="noopener noreferrer"
               className="w-auto hover:text-yellow-500"
@@ -49,7 +49,7 @@ const AppFooter: React.FC<Props> = () => {
                 className="w-10 lg:w-8 h-10 lg:h-8"
               />
             </Link>
-            <Link
+            {/* <Link
               href="https://medium.com/"
               target="_blank"
               rel="noopener noreferrer"
@@ -60,12 +60,12 @@ const AppFooter: React.FC<Props> = () => {
                 alt="dc-logo"
                 className="w-10 lg:w-8 h-10 lg:h-8 !rounded-full"
               />
-            </Link>
+            </Link> */}
             <Link
-              href="https://t.me/"
+              href="https://t.me/juicyfi"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-auto hover:text-yellow-500"
+              className="w-auto hover:text-yellow-500 mx-2"
             >
               <Image
                 src={TelegramLogo}
@@ -77,7 +77,7 @@ const AppFooter: React.FC<Props> = () => {
               href="/"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-auto hover:text-yellow-500 ml-2"
+              className="w-auto hover:text-yellow-500"
             >
               <Image
                 src={GitbookLogo}

@@ -3,11 +3,11 @@ import { NumberFormatValues, NumericFormat } from "react-number-format";
 import { Input, useDisclosure } from "@chakra-ui/react";
 import { DownOutlined } from "@ant-design/icons";
 
-import { SelectCurrencyTo } from "./Select/CurrencyTo";
+import { SelectCurrencyTo } from "../Select/CurrencyTo";
 
-import type { MixerState } from "./@models";
+import type { MixerState } from "../@models";
 
-import "./style.css";
+import "../style.css";
 
 interface Props {
   state: MixerState;
@@ -33,9 +33,9 @@ export const Receive: React.FC<Props> = ({
         <div className="text-xs font-semibold">You Send</div>
         <div className="mx-2">{state.name.toUpperCase()}</div>
       </div>
-      <div className="w-full flex items-center justify-between border-2 border-white rounded-lg">
+      <div className="w-full flex items-center justify-between border-[3px] border-white rounded-lg">
         <NumericFormat
-          className="w-4/5 lg:w-[90%] !border-none !shadow-none !outline-none pointer-events-none"
+          className="w-4/5 lg:w-[90%] !border-none !shadow-none !outline-none pointer-events-none font-semibold"
           // getInputRef={inputRef}
           value={state.amount}
           onValueChange={onChangeReceiveMixerAmount}

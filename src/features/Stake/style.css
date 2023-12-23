@@ -33,5 +33,5 @@
 .btn-unstake,
 .btn-claim {
   @apply text-white font-semibold;
-  @apply bg-pink-rose hover:bg-pink-light active:bg-pink-light focus:bg-pink-light;
+  @apply bg-pink-light hover:bg-pink-rose active:bg-pink-rose focus:bg-pink-rose;
 }

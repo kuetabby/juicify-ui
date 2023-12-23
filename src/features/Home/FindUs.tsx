@@ -37,9 +37,10 @@ export const AppFindUs: React.FC<Props> = () => {
         <div className={`relative why-card-container !mt-2`}>
           <div className="w-full md:w-4/5 lg:w-1/2 flex flex-wrap justify-between items-center relative px-2 mx-auto">
             <Link
-              href="https://app.uniswap.org/tokens/ethereum/"
-              target="_blank"
-              rel="noopener noreferrer"
+              // href="https://app.uniswap.org/tokens/ethereum/0xaf0E63457b2542B75fcEb6AA066D3DE420A6D88e"
+              href="/"
+              // target="_blank"
+              // rel="noopener noreferrer"
               className="w-full sm:w-[30%]"
             >
               <Button
@@ -55,9 +56,10 @@ export const AppFindUs: React.FC<Props> = () => {
               </Button>
             </Link>
             <Link
-              href="https://dexscreener.com/ethereum/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/"
+              // href="https://dexscreener.com/ethereum/"
+              // target="_blank"
+              // rel="noopener noreferrer"
               className="w-full sm:w-[30%] my-6 sm:my-0"
             >
               <Button
@@ -73,9 +75,10 @@ export const AppFindUs: React.FC<Props> = () => {
               </Button>
             </Link>
             <Link
-              href="http://dextools.io/app/ether/pair-explorer/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/"
+              // href="http://dextools.io/app/ether/pair-explorer/"
+              // target="_blank"
+              // rel="noopener noreferrer"
               // className="w-full sm:w-[30%] mx-auto my-2 sm:my-0 h-[20vw] xs:h-[15vw] sm:h-full"
               className="w-full sm:w-[30%]"
             >

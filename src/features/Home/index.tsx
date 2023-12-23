@@ -61,8 +61,14 @@ const Home: React.FC<Props> = () => {
           JuicyFi. Explore a new era of financial possibilities today */}
           Your gateway to a secure and private financial ecosystem.
         </div>
-        <div className="my-4 text-sm sm:text-base">{"-"}</div>
-        <Link href="/" target="_blank" rel="noopener noreferrer">
+        <div className="mt-4 mb-6 text-sm sm:text-base font-semibold">
+          {/* 0xaf0E63457b2542B75fcEb6AA066D3DE420A6D88e */}-
+        </div>
+        <Link
+          href="/"
+          // target="_blank"
+          // rel="noopener noreferrer"
+        >
           <Button
             className="w-[8.5em] bg-pink-light hover:bg-pink-rose active:bg-pink-rose focus:bg-pink-rose text-white shadow-sunny hover:shadow-rose ml-2 sm:ml-0"
             rightIcon={<SwapRightOutlined style={{ fontSize: "1.5em" }} />}
@@ -71,7 +77,12 @@ const Home: React.FC<Props> = () => {
           </Button>
         </Link>
 
-        <Link href="/" target="_blank" rel="noopener noreferrer">
+        <Link
+          href="/"
+          // href="https://app.uniswap.org/tokens/ethereum/0xaf0E63457b2542B75fcEb6AA066D3DE420A6D88e"
+          // target="_blank"
+          // rel="noopener noreferrer"
+        >
           <Button
             className="w-[8em] bg-pink-light hover:bg-pink-rose active:bg-pink-rose focus:bg-pink-rose text-white shadow-sunny hover:shadow-rose ml-6"
             rightIcon={<SwapRightOutlined style={{ fontSize: "1.5em" }} />}

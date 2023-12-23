@@ -54,7 +54,7 @@ export const AppTokenomics: React.FC<Props> = () => {
                 Name : JuicyFi
               </ListItem>
               <ListItem className="text-lg lg:text-2xl xl:text-3xl font-bold">
-                Total Supply : -
+                Total Supply : 100,000,000
               </ListItem>
               <ListItem className="text-lg lg:text-2xl xl:text-3xl font-bold">
                 Tax Buy/Sell : 5 %
@@ -76,7 +76,7 @@ export const AppTokenomics: React.FC<Props> = () => {
         </div>
         <List className="text-base lg:text-2xl xl:text-3xl font-semibold xs:px-2 sm:px-0 text-center mb-4">
           <ListItem className="text-lg lg:text-2xl xl:text-3xl font-bold">
-            CA : {"-"}
+            CA : -{/* 0xaf0E63457b2542B75fcEb6AA066D3DE420A6D88e */}
           </ListItem>
         </List>
       </div>

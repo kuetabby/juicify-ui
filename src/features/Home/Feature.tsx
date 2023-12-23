@@ -67,7 +67,7 @@ export const AppFeature: React.FC<Props> = () => {
               activities within a secure and anonymous environment
             </CardBody>
             <CardFooter className="pt-0 mx-auto">
-              <Link href="/" target="_blank" rel="noopener noreferrer">
+              <Link href="/juice">
                 <Button
                   rightIcon={<ArrowRightOutlined />}
                   className="bg-pink-light hover:bg-pink-rose active:bg-pink-rose focus:bg-pink-rose text-white mt-4 shadow-sunny hover:shadow-rose"
@@ -98,7 +98,7 @@ export const AppFeature: React.FC<Props> = () => {
               smart contracts across JuicyFi's expansive network
             </CardBody>
             <CardFooter className="pt-0 mx-auto">
-              <Link href="/" target="_blank" rel="noopener noreferrer">
+              <Link href="/audit">
                 <Button
                   rightIcon={<ArrowRightOutlined />}
                   className="bg-pink-light hover:bg-pink-rose active:bg-pink-rose focus:bg-pink-rose text-white mt-4 shadow-sunny hover:shadow-rose"
@@ -127,7 +127,7 @@ export const AppFeature: React.FC<Props> = () => {
               earning passive income as you support JuicyFi's expansion
             </CardBody>
             <CardFooter className="pt-0 mx-auto">
-              <Link href="/" target="_blank" rel="noopener noreferrer">
+              <Link href="/staking">
                 <Button
                   rightIcon={<ArrowRightOutlined />}
                   className="bg-pink-light hover:bg-pink-rose active:bg-pink-rose focus:bg-pink-rose text-white mt-4 shadow-sunny hover:shadow-rose"

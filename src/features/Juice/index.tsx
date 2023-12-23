@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import { Button, Input, useDisclosure, useToast } from "@chakra-ui/react";
 import { NumberFormatValues } from "react-number-format";
 
-import { Send } from "./Send";
-import { Receive } from "./Receive";
+import { Send } from "./Input/Send";
+import { Receive } from "./Input/Receive";
 import { StatusOrder } from "./Status";
 import { StatusOrderById } from "./StatusById";
 
@@ -235,7 +235,7 @@ const Juice: React.FC<Props> = () => {
           <Input
             value={recipientAddress}
             onChange={onChangeRecipientAddress}
-            className="w-full my-2 py-1 border-2 border-white focus:border-white !shadow-none !outline-none"
+            className="w-full my-2 py-1 border-[3px] border-white focus:border-white !shadow-none !outline-none"
             color={"white"}
             placeholder="Your Recipient Address"
             _placeholder={{
@@ -254,7 +254,7 @@ const Juice: React.FC<Props> = () => {
             </div>
             <div className="w-full sm:w-4/5 flex justify-center sm:justify-start">
               <Button
-                className={`w-1/2 sm:w-24 border-2 ${
+                className={`w-1/2 sm:w-24 border-[3px] ${
                   typeMixer === MixerType.FIXED
                     ? "border-pink-500"
                     : "border-white"
@@ -264,7 +264,7 @@ const Juice: React.FC<Props> = () => {
                 Fixed
               </Button>
               <Button
-                className={`w-1/2 sm:w-24 border-2 ${
+                className={`w-1/2 sm:w-24 border-[3px] ${
                   typeMixer === MixerType.FLOAT
                     ? "border-pink-500"
                     : "border-white"
