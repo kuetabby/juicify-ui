@@ -2,7 +2,7 @@ import { useMutation } from "react-query";
 import axios from "axios";
 import { useToast } from "@chakra-ui/react";
 
-import { CreateExchangeDto } from "../models";
+import { CreateExchangeDto } from "../@models";
 
 const apiKey = process.env.NEXT_PUBLIC_CHANGE_NOW_API_SECRET;
 
@@ -14,7 +14,7 @@ export const useCreateExchange = () => {
       const request = await axios({
         method: "POST",
         data: dto,
-        url: `https://api.changenow.io/v2/exchange`,
+        url: `/mixer/exchange`,
         headers: {
           "Content-Type": "application/json",
           Accept: "*/*",

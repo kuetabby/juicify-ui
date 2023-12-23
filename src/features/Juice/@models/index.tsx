@@ -54,3 +54,51 @@ export interface CreateExchangeDto {
   type: string;
   rateId: string;
 }
+
+export interface CreateExchangeResponse {
+  fromAmount: number;
+  toAmount: number;
+  flow: string;
+  type: string;
+  payinAddress: string;
+  payoutAddress: string;
+  payinExtraId: string;
+  fromCurrency: string;
+  toCurrency: string;
+  validUntil: string;
+  id: string;
+  payinExtraIdName: string;
+  fromNetwork: string;
+  toNetwork: string;
+}
+
+export interface StatusExchangeResponse {
+  id: string;
+  status: string;
+  actionsAvailable: boolean;
+  fromCurrency: string;
+  fromNetwork: string;
+  toCurrency: string;
+  toNetwork: string;
+  expectedAmountFrom: number;
+  expectedAmountTo: number;
+  amountFrom: any;
+  amountTo: any;
+  payinAddress: string;
+  payoutAddress: string;
+  payinExtraId: any;
+  payoutExtraId: any;
+  refundAddress: any;
+  refundExtraId: any;
+  createdAt: string;
+  updatedAt: string;
+  validUntil: string;
+  depositReceivedAt: any;
+  payinHash: any;
+  payoutHash: any;
+  fromLegacyTicker: string;
+  toLegacyTicker: string;
+  refundHash: any;
+  refundAmount: any;
+  userId: any;
+}

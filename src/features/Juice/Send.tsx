@@ -5,7 +5,7 @@ import { DownOutlined } from "@ant-design/icons";
 
 import { SelectCurrencyFrom } from "./Select/CurrencyFrom";
 
-import type { MixerState } from "./models";
+import type { MixerState } from "./@models";
 
 import "./style.css";
 

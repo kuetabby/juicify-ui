@@ -60,7 +60,7 @@ export const InformationToken: React.FC<Props> = ({
   };
 
   return (
-    <Card className="w-full h-full bg-dark-secondary rounded-lg text-white">
+    <Card className="w-full h-full bg-dark-secondary rounded-lg text-white shadow-sunny">
       <CardHeader className="pb-0 font-semibold text-xl">Project</CardHeader>
       <CardBody>
         <div className="w-full flex flex-wrap justify-between mb-4">

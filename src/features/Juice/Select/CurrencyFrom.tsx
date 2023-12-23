@@ -17,9 +17,9 @@ import { SearchOutlined } from "@ant-design/icons";
 
 import useDebounce from "@/hooks/useDebounce";
 
-import { list_tokens } from "../utils/tokens";
+import { list_tokens } from "../@utils/tokens";
 
-import type { MixerState, Token } from "../models";
+import type { MixerState, Token } from "../@models";
 
 interface Props {
   state: MixerState;
@@ -68,35 +68,38 @@ export const SelectCurrencyFrom: React.FC<Props> = ({
     );
 
     if (list.length) {
-      return list.map((item) => (
-        <Card
-          overflow="hidden"
-          variant="outline"
-          className={`w-full mb-4 bg-dark-secondary cursor-pointer ${
-            state.currency === item.name &&
-            "border-none bg-pink-light shadow-sunny"
-          } hover:border-none hover:bg-pink-light hover:shadow-sunny`}
-          key={item.legacyTicker}
-          onClick={() => onSelect(item)}
-        >
-          <CardBody className="flex items-center px-0 py-2">
-            <div className="w-1/12 ml-2">
-              <Image
-                src={item.image}
-                alt={item.name}
-                width={35}
-                height={35}
-                className="object-contain"
-              />
-            </div>
+      return list.map((item) => {
+        return (
+          <Card
+            overflow="hidden"
+            variant="outline"
+            className={`w-full mb-4 bg-dark-secondary cursor-pointer ${
+              state.currency === item.ticker &&
+              state.network === item.network &&
+              "border-none bg-pink-light shadow-sunny"
+            } hover:border-none hover:bg-pink-light hover:shadow-sunny`}
+            key={item.legacyTicker}
+            onClick={() => onSelect(item)}
+          >
+            <CardBody className="flex items-center px-0 py-2">
+              <div className="w-1/12 ml-2">
+                <Image
+                  src={item.image}
+                  alt={item.name}
+                  width={35}
+                  height={35}
+                  className="object-contain"
+                />
+              </div>
 
-            <div className="w-3/4 flex flex-col text-white ml-3">
-              <div className="font-bold">{item.ticker.toUpperCase()}</div>
-              <div className="">{item.name}</div>
-            </div>
-          </CardBody>
-        </Card>
-      ));
+              <div className="w-3/4 flex flex-col text-white ml-3">
+                <div className="font-bold">{item.ticker.toUpperCase()}</div>
+                <div className="">{item.name}</div>
+              </div>
+            </CardBody>
+          </Card>
+        );
+      });
     }
 
     return (

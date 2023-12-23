@@ -5,7 +5,7 @@
 }
 
 .app-juice-title {
-  @apply bg-pink-light;
+  @apply bg-pink-light font-semibold;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

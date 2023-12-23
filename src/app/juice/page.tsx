@@ -1,6 +1,6 @@
-// import Juice from "@/features/Juice";
+import Juice from "@/features/Juice";
 
 export default function JuicePage() {
-  // return <Juice />;
-  return <div />;
+  return <Juice />;
+  // return <div />;
 }

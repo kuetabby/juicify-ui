@@ -5,17 +5,19 @@ import { NumberFormatValues } from "react-number-format";
 
 import { Send } from "./Send";
 import { Receive } from "./Receive";
+import { StatusOrder } from "./Status";
+import { StatusOrderById } from "./StatusById";
 
 import Loader from "@/components/Loader";
 
 import useDebounce from "@/hooks/useDebounce";
 import { useIsMounted } from "@/hooks/useIsMounted";
 
-import { useEstimateExchange } from "./api/useEstimateExchange";
+import { useEstimateExchange } from "./@api/useEstimateExchange";
 // import { useAddressValidation } from "./api/useAddressValidation";
-import { useCreateExchange } from "./api/useCreateExchange";
+import { useCreateExchange } from "./@api/useCreateExchange";
 
-import { MixerState, MixerType } from "./models";
+import { CreateExchangeResponse, MixerState, MixerType } from "./@models";
 
 import "./style.css";
 
@@ -42,11 +44,20 @@ const Juice: React.FC<Props> = () => {
   const [receiveMixer, setReceiveMixer] = useState(initialReceiveMixer);
   const [typeMixer, setTypeMixer] = useState(MixerType.FIXED);
 
+  const [exchangeData, setExchangeData] = useState<
+    CreateExchangeResponse | undefined
+  >();
+
   const [recipientAddress, setRecipientAddress] = useState("");
   const debounceRecipientAddress = useDebounce(recipientAddress, 200);
 
   const isMounted = useIsMounted();
-  const { isOpen: isClicked, onClose, onOpen } = useDisclosure();
+  const { isOpen, onClose, onOpen } = useDisclosure();
+  const {
+    isOpen: isOpenSearch,
+    onClose: onCloseSearch,
+    onOpen: onOpenSearch,
+  } = useDisclosure();
   const toast = useToast();
 
   const { mutateAsync: createExchange, isLoading: isLoadingCreateExchange } =
@@ -152,9 +163,17 @@ const Juice: React.FC<Props> = () => {
       const request = await createExchange(DataJSON);
       const response = await request;
 
+      setRecipientAddress("");
+      setTypeMixer(MixerType.FIXED);
+      setExchangeData(response);
+
+      onOpen();
+
+      // console.log(response, "response");
+
       return response;
     } catch (error: any) {
-      console.error(error);
+      // console.error(error);
       let errorMessage = "An error occurred while processing your request";
       if (error.response) {
         // The request was made and the server responded with a status code
@@ -175,6 +194,10 @@ const Juice: React.FC<Props> = () => {
     }
   };
 
+  const onResetExchangeData = () => {
+    setExchangeData(undefined);
+  };
+
   if (!isMounted) {
     return <Loader />;
   }
@@ -183,7 +206,9 @@ const Juice: React.FC<Props> = () => {
     <div className="juice-container">
       <div id="juice" className="h-12 md:h-20 relative" />
       <div className="w-full md:w-11/12 h-full relative mx-auto">
-        <h1 className={`app-juice-title`}>Lightning cryptocurrency exchange</h1>
+        <h1 className={`app-juice-title`}>
+          Facilitating Swift Cryptocurrency Exchanges with JuicyFi
+        </h1>
 
         <div className="h-12 md:h-20 relative" />
         <div className="flex flex-wrap justify-between items-center">
@@ -221,7 +246,7 @@ const Juice: React.FC<Props> = () => {
 
         <div className="h-6 relative" />
         <div className="w-3/4 sm:w-full mx-auto flex flex-wrap justify-between items-center">
-          <div className="w-full sm:w-2/3 flex flex-wrap items-center">
+          <div className="w-full sm:w-[63%] flex flex-wrap items-center">
             <div className="w-full sm:w-2/12 lg:w-[5em]">
               <span className="text-xs sm:text-sm font-semibold">
                 Order type
@@ -250,18 +275,37 @@ const Juice: React.FC<Props> = () => {
               </Button>
             </div>
           </div>
-          <div className="w-full sm:w-1/4 mt-4 sm:mt-0 text-center sm:text-end">
+          <div className="w-full sm:w-[35%] flex flex-wrap justify-evenly lg:justify-end mt-4 sm:mt-0 text-center sm:text-end">
             <Button
               colorScheme="pink"
               isDisabled={!recipientAddress}
               onClick={onCreateExchange}
               isLoading={isLoadingEstimate || isLoadingCreateExchange}
             >
-              Exchange now
+              Exchange
+            </Button>
+
+            <Button
+              className="lg:ml-4"
+              colorScheme="whiteAlpha"
+              onClick={onOpenSearch}
+            >
+              Search
             </Button>
           </div>
         </div>
       </div>
+      {isOpen && exchangeData && (
+        <StatusOrder
+          isOpen={isOpen}
+          data={exchangeData}
+          onResetExchangeData={onResetExchangeData}
+          onClose={onClose}
+        />
+      )}
+      {isOpenSearch && (
+        <StatusOrderById isOpen={isOpenSearch} onClose={onCloseSearch} />
+      )}
     </div>
   );
 };

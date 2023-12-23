@@ -17,9 +17,9 @@ import { SearchOutlined } from "@ant-design/icons";
 
 import useDebounce from "@/hooks/useDebounce";
 
-import { list_tokens } from "../utils/tokens";
+import { list_tokens } from "../@utils/tokens";
 
-import type { MixerState, Token } from "../models";
+import type { MixerState, Token } from "../@models";
 
 interface Props {
   isOpen: boolean;
@@ -73,7 +73,8 @@ export const SelectCurrencyTo: React.FC<Props> = ({
           overflow="hidden"
           variant="outline"
           className={`w-full mb-4 bg-dark-secondary cursor-pointer ${
-            state.currency === item.name &&
+            state.currency === item.ticker &&
+            state.network === item.network &&
             "border-none bg-pink-light shadow-sunny"
           } hover:border-none hover:bg-pink-light hover:shadow-sunny`}
           key={item.legacyTicker}

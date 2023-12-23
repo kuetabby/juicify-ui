@@ -2,7 +2,7 @@ import axios from "axios";
 import { useQuery } from "react-query";
 import { useToast } from "@chakra-ui/react";
 
-import { MixerType, type EstimateExchange } from "../models";
+import { MixerType, type EstimateExchange } from "../@models";
 
 const apiKey = process.env.NEXT_PUBLIC_CHANGE_NOW_API_SECRET;
 
@@ -31,7 +31,7 @@ export const useEstimateExchange = ({
       try {
         const request = await axios({
           method: "GET",
-          url: `https://api.changenow.io/v2/exchange/estimated-amount?fromCurrency=${fromCurrency}&toCurrency=${toCurrency}&fromAmount=${fromAmount}&toAmount=&fromNetwork=${fromNetwork}&toNetwork=${toNetwork}&flow=${flowType}&type=direct&${
+          url: `/mixer/exchange/estimated-amount?fromCurrency=${fromCurrency}&toCurrency=${toCurrency}&fromAmount=${fromAmount}&toAmount=&fromNetwork=${fromNetwork}&toNetwork=${toNetwork}&flow=${flowType}&type=direct&${
             flowType === MixerType.FIXED ? "useRateId=true" : ""
           }`,
           headers: {

@@ -37,7 +37,7 @@ export const InformationTrade: React.FC<Props> = ({
   const poolPrice = poolPriceResponse?.data;
 
   return (
-    <Card className="w-full h-full bg-dark-secondary rounded-lg text-white mb-4">
+    <Card className="w-full h-full bg-dark-secondary rounded-lg text-white mb-6 mt-2 sm:mt-0 shadow-sunny">
       <CardBody className="w-full flex flex-wrap justify-between">
         {/* <div className="w-full xs:w-1/2">
           <div className="font-semibold text-xl">Liquidity</div>

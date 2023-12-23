@@ -64,7 +64,7 @@ const Home: React.FC<Props> = () => {
         <div className="my-4 text-sm sm:text-base">{"-"}</div>
         <Link href="/" target="_blank" rel="noopener noreferrer">
           <Button
-            className="w-32 bg-pink-light hover:bg-pink-rose active:bg-pink-rose focus:bg-pink-rose text-white shadow-sunny hover:shadow-rose ml-2 sm:ml-0"
+            className="w-[8.5em] bg-pink-light hover:bg-pink-rose active:bg-pink-rose focus:bg-pink-rose text-white shadow-sunny hover:shadow-rose ml-2 sm:ml-0"
             rightIcon={<SwapRightOutlined style={{ fontSize: "1.5em" }} />}
           >
             Whitepaper
@@ -73,7 +73,7 @@ const Home: React.FC<Props> = () => {
 
         <Link href="/" target="_blank" rel="noopener noreferrer">
           <Button
-            className="w-32 bg-pink-light hover:bg-pink-rose active:bg-pink-rose focus:bg-pink-rose text-white shadow-sunny hover:shadow-rose ml-6"
+            className="w-[8em] bg-pink-light hover:bg-pink-rose active:bg-pink-rose focus:bg-pink-rose text-white shadow-sunny hover:shadow-rose ml-6"
             rightIcon={<SwapRightOutlined style={{ fontSize: "1.5em" }} />}
           >
             Buy Now

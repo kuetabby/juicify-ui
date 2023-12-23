@@ -46,7 +46,7 @@ export const InformationOverview: React.FC<Props> = ({ scanResponse }) => {
   const isSameOwnerHoneypot = !!Number(honeypot_with_same_creator);
 
   return (
-    <Card className="w-full h-full bg-dark-secondary rounded-lg text-white">
+    <Card className="w-full h-full bg-dark-secondary rounded-lg text-white shadow-sunny">
       <CardHeader className="pb-0 font-semibold text-xl">
         Contract Security!
       </CardHeader>

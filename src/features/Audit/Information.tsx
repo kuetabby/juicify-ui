@@ -75,7 +75,7 @@ export const Information: React.FC<Props> = ({
     DexToolsPoolPriceResponse,
     {}
   >(
-    [chainId, contractAddress, dex.length, "pool price"],
+    [chainId, contractAddress, dex, "pool price"],
     async () => {
       const request = await axios.get(`/api/pool/price`, {
         params: {
@@ -106,7 +106,7 @@ export const Information: React.FC<Props> = ({
 
         return error.message;
       },
-      enabled: !!chainId && !isEmptyResponse && !!Boolean(dex.length),
+      enabled: !!chainId && !isEmptyResponse && !!Boolean(dex?.length),
       refetchOnWindowFocus: false,
     }
   );

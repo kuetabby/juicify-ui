@@ -4,7 +4,7 @@ import axios from "axios";
 import { useQuery } from "react-query";
 import { useToast } from "@chakra-ui/react";
 
-import { AddressValidationParams } from "../models";
+import { AddressValidationParams } from "../@models";
 
 export const useAddressValidation = ({
   address,
@@ -20,7 +20,7 @@ export const useAddressValidation = ({
       try {
         const request = await axios({
           method: "GET",
-          url: `https://api.changenow.io/v2/validate/address?currency=${network}&address=${address}`,
+          url: `/mixer/validate/address?currency=${network}&address=${address}`,
           headers: {
             "Content-Type": "application/json",
             Accept: "*/*",
