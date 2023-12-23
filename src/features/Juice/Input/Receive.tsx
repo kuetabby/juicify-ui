@@ -30,7 +30,7 @@ export const Receive: React.FC<Props> = ({
   return (
     <div className="w-3/4 sm:w-[45%] mx-auto sm:mx-0 mt-10 sm:mt-0">
       <div className="w-full flex items-center justify-between">
-        <div className="text-xs font-semibold">You Send</div>
+        <div className="text-xs font-semibold">You Receive</div>
         <div className="mx-2">{state.name.toUpperCase()}</div>
       </div>
       <div className="w-full flex items-center justify-between border-[3px] border-white rounded-lg">
